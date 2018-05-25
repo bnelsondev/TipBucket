@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370F5EE21FC531D300750A54 /* LocationServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F5EE11FC531D300750A54 /* LocationServicesViewController.swift */; };
+		370F5EE41FCE60AA00750A54 /* UserDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F5EE31FCE60AA00750A54 /* UserDescriptionViewController.swift */; };
+		370F5EE81FCE627900750A54 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F5EE71FCE627900750A54 /* UserAnnotation.swift */; };
+		37452C511FE224D700262F74 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37452C501FE224D700262F74 /* MenuViewController.swift */; };
+		379D001D2050D21500367602 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 379D001C2050D21500367602 /* awsconfiguration.json */; };
+		37A2BD1C20296BE200BA4F1B /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2BD1B20296BE200BA4F1B /* Transactions.swift */; };
+		37A2BD242047A05100BA4F1B /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2BD232047A05100BA4F1B /* ActivityTableViewController.swift */; };
+		37A2BD262047A55A00BA4F1B /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2BD252047A55A00BA4F1B /* TransactionTableViewCell.swift */; };
+		37ABF26E20A351C000FE7B9A /* AWSAuthCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF26F20A351C000FE7B9A /* AWSAuthCore.framework */; };
+		37ABF27020A351CB00FE7B9A /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27120A351CB00FE7B9A /* AWSCognitoIdentityProvider.framework */; };
+		37ABF27220A351D100FE7B9A /* AWSAuthUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27320A351D100FE7B9A /* AWSAuthUI.framework */; };
+		37ABF27420A351D500FE7B9A /* AWSCognitoIdentityProviderASF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27520A351D500FE7B9A /* AWSCognitoIdentityProviderASF.framework */; };
+		37ABF27620A351D900FE7B9A /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27720A351D900FE7B9A /* AWSCore.framework */; };
+		37ABF27820A351DD00FE7B9A /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27920A351DD00FE7B9A /* AWSDynamoDB.framework */; };
+		37ABF27A20A351E100FE7B9A /* AWSUserPoolsSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27B20A351E100FE7B9A /* AWSUserPoolsSignIn.framework */; };
+		37ABF27C20A351EC00FE7B9A /* Pods_TipBucket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27D20A351EC00FE7B9A /* Pods_TipBucket.framework */; };
+		37ABF27E20A351F600FE7B9A /* AWSMobileClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF27F20A351F600FE7B9A /* AWSMobileClient.framework */; };
+		37ABF28020A3523300FE7B9A /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF28120A3523300FE7B9A /* DLRadioButton.framework */; };
+		37ABF28220A3523E00FE7B9A /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF28320A3523E00FE7B9A /* SideMenu.framework */; };
+		37ABF28420A3524300FE7B9A /* AWSPinpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABF28520A3524300FE7B9A /* AWSPinpoint.framework */; };
+		37BB047D1FA6640100485EDD /* SendPingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BB047C1FA6640100485EDD /* SendPingViewController.swift */; };
+		37BB047F1FA6BD0900485EDD /* SendPingDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BB047E1FA6BD0900485EDD /* SendPingDescriptionViewController.swift */; };
+		37BBF2D01FFB202E008BDE6B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BBF2CF1FFB202E008BDE6B /* Users.swift */; };
+		37C3EF961FD8C65C00A9FB38 /* TestLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 37C3EF951FD8C65C00A9FB38 /* TestLocation.gpx */; };
+		37E13F8D20ABDE810081F971 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E13F8C20ABDE810081F971 /* MapKit.framework */; };
+		37E2BF611F9D2C7D007C7171 /* ActiveUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2BF601F9D2C7D007C7171 /* ActiveUsersViewController.swift */; };
+		E7A30F040E44EE0C00000000 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E290C6636A500000000 /* Launch Screen.storyboard */; };
+		E7A30F041AF2E88000000000 /* NoSQLModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29A522470900000000 /* NoSQLModelHelpers.swift */; };
+		E7A30F0429FC032F00000000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2947060F5700000000 /* AppDelegate.swift */; };
+		E7A30F043079D6B200000000 /* PingsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2970E374C500000000 /* PingsTable.swift */; };
+		E7A30F0437F8284E00000000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E2988C5AD3500000000 /* Images.xcassets */; };
+		E7A30F04420534BE00000000 /* NoSQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E299CADA3EB00000000 /* NoSQLTableViewController.swift */; };
+		E7A30F045C92D6AA00000000 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29F230802700000000 /* Security.framework */; };
+		E7A30F0465FDC06D00000000 /* NoSQLDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E2956B6530B00000000 /* NoSQLDatabase.storyboard */; };
+		E7A30F046BFEEA1600000000 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E2962D612D700000000 /* AVFoundation.framework */; };
+		E7A30F046E843E8D00000000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E29639097D100000000 /* Main.storyboard */; };
+		E7A30F046F09057D00000000 /* Engage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E29F33DA97D00000000 /* Engage.storyboard */; };
+		E7A30F0479F0ABB700000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29FC8434B100000000 /* Foundation.framework */; };
+		E7A30F047B56D17F00000000 /* UserAccountTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E290C8EAAF700000000 /* UserAccountTable.swift */; };
+		E7A30F04871DE67000000000 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29FDC5C29600000000 /* libsqlite3.tbd */; };
+		E7A30F049C20E92D00000000 /* EngageAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2910B9B37300000000 /* EngageAnalyticsViewController.swift */; };
+		E7A30F04A745BFB800000000 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E2975C68E5900000000 /* AVKit.framework */; };
+		E7A30F04A9F8EF7600000000 /* NoSQLTableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29401B66CF00000000 /* NoSQLTableListViewController.swift */; };
+		E7A30F04AA4F411600000000 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2904410CE000000000 /* UtilityFunctions.swift */; };
+		E7A30F04AB9F1D4300000000 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29FB043D8B00000000 /* SafariServices.framework */; };
+		E7A30F04C367314D00000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E2946DECD2700000000 /* UIKit.framework */; };
+		E7A30F04C3EAA17F00000000 /* NoSQLQueryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2955AE162D00000000 /* NoSQLQueryResultViewController.swift */; };
+		E7A30F04C468845300000000 /* NoSQLTableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29D1D84E8900000000 /* NoSQLTableFactory.swift */; };
+		E7A30F04C6E0F4A900000000 /* EngageDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E2987865B6700000000 /* EngageDescriptionViewController.swift */; };
+		E7A30F04E3BC817000000000 /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29E21A8D5F00000000 /* UserIdentityViewController.swift */; };
+		E7A30F04EA9F866500000000 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29366F84A500000000 /* CFNetwork.framework */; };
+		E7A30F04EC5BB12000000000 /* UserIdentity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E291A60023500000000 /* UserIdentity.storyboard */; };
+		E7A30F04F028F46300000000 /* NoSQLSampleDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E293491208B00000000 /* NoSQLSampleDataGenerator.swift */; };
+		E7A30F04F38AA36D00000000 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29DDC78DAD00000000 /* SystemConfiguration.framework */; };
+		E7A30F04F61729C200000000 /* DemoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E297BAD932F00000000 /* DemoFeature.swift */; };
+		E7A30F04F6B7192100000000 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29B80691A000000000 /* libz.tbd */; };
+		E7A30F04FFA9495200000000 /* UserEngageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29C0D4ECB100000000 /* UserEngageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD70E2903593A7900000000 /* MySampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MySampleApp.entitlements; path = MySampleApp/MySampleApp.entitlements; sourceTree = SOURCE_ROOT; };
+		1DD70E2904410CE000000000 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UtilityFunctions.swift; path = MySampleApp/App/Utility/UtilityFunctions.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E290C6636A500000000 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "MySampleApp/App/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		1DD70E290C8EAAF700000000 /* UserAccountTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserAccountTable.swift; path = MySampleApp/Demo/NoSQL/UserAccountTable.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2910B9B37300000000 /* EngageAnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EngageAnalyticsViewController.swift; path = MySampleApp/Demo/Engage/EngageAnalyticsViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E291A60023500000000 /* UserIdentity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserIdentity.storyboard; path = MySampleApp/Demo/UserIdentity/UserIdentity.storyboard; sourceTree = SOURCE_ROOT; };
+		1DD70E293491208B00000000 /* NoSQLSampleDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoSQLSampleDataGenerator.swift; path = MySampleApp/Demo/NoSQL/NoSQLSampleDataGenerator.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29366F84A500000000 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1DD70E29401B66CF00000000 /* NoSQLTableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoSQLTableListViewController.swift; path = MySampleApp/Demo/NoSQL/NoSQLTableListViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2946DECD2700000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DD70E2947060F5700000000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MySampleApp/App/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2955AE162D00000000 /* NoSQLQueryResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoSQLQueryResultViewController.swift; path = MySampleApp/Demo/NoSQL/NoSQLQueryResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2956B6530B00000000 /* NoSQLDatabase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = NoSQLDatabase.storyboard; path = MySampleApp/Demo/NoSQL/NoSQLDatabase.storyboard; sourceTree = SOURCE_ROOT; };
+		1DD70E2962D612D700000000 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1DD70E29639097D100000000 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MySampleApp/App/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		1DD70E2970E374C500000000 /* PingsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PingsTable.swift; path = MySampleApp/Demo/NoSQL/PingsTable.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2975C68E5900000000 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1DD70E2976EDA96B00000000 /* TipBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = TipBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E297BAD932F00000000 /* DemoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoFeature.swift; path = MySampleApp/Demo/DemoFeature.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2987865B6700000000 /* EngageDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EngageDescriptionViewController.swift; path = MySampleApp/Demo/Engage/EngageDescriptionViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2988C5AD3500000000 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MySampleApp/App/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		1DD70E299CADA3EB00000000 /* NoSQLTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoSQLTableViewController.swift; path = MySampleApp/Demo/NoSQL/NoSQLTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29A522470900000000 /* NoSQLModelHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoSQLModelHelpers.swift; path = MySampleApp/Demo/NoSQL/NoSQLModelHelpers.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29B80691A000000000 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1DD70E29C0D4ECB100000000 /* UserEngageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserEngageViewController.swift; path = MySampleApp/Demo/Engage/UserEngageViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29CBEEDD1400000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MySampleApp/App/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
+		1DD70E29D1D84E8900000000 /* NoSQLTableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoSQLTableFactory.swift; path = MySampleApp/Demo/NoSQL/NoSQLTableFactory.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29DDC78DAD00000000 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1DD70E29E21A8D5F00000000 /* UserIdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserIdentityViewController.swift; path = MySampleApp/Demo/UserIdentity/UserIdentityViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29F230802700000000 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1DD70E29F33DA97D00000000 /* Engage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Engage.storyboard; path = MySampleApp/Demo/Engage/Engage.storyboard; sourceTree = SOURCE_ROOT; };
+		1DD70E29FB043D8B00000000 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		1DD70E29FC8434B100000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DD70E29FDC5C29600000000 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1E29183B32710AC45986C52C /* Pods-MySampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySampleApp/Pods-MySampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		291C173FEBE9C34998F4C39D /* Pods-MySampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySampleApp/Pods-MySampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		370F5EE11FC531D300750A54 /* LocationServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesViewController.swift; sourceTree = "<group>"; };
+		370F5EE31FCE60AA00750A54 /* UserDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescriptionViewController.swift; sourceTree = "<group>"; };
+		370F5EE71FCE627900750A54 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		37452C501FE224D700262F74 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		379D001C2050D21500367602 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		37A2BD1B20296BE200BA4F1B /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transactions.swift; path = mysampleapp/amazonaws/models/mysampleapp/amazonaws/models/nosql/Transactions.swift; sourceTree = SOURCE_ROOT; };
+		37A2BD232047A05100BA4F1B /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		37A2BD252047A55A00BA4F1B /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		37ABF26F20A351C000FE7B9A /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27120A351CB00FE7B9A /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCognitoIdentityProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27320A351D100FE7B9A /* AWSAuthUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAuthUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27520A351D500FE7B9A /* AWSCognitoIdentityProviderASF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCognitoIdentityProviderASF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27720A351D900FE7B9A /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27920A351DD00FE7B9A /* AWSDynamoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27B20A351E100FE7B9A /* AWSUserPoolsSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSUserPoolsSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27D20A351EC00FE7B9A /* Pods_TipBucket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TipBucket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF27F20A351F600FE7B9A /* AWSMobileClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSMobileClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF28120A3523300FE7B9A /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF28320A3523E00FE7B9A /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABF28520A3524300FE7B9A /* AWSPinpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSPinpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37BB047C1FA6640100485EDD /* SendPingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPingViewController.swift; sourceTree = "<group>"; };
+		37BB047E1FA6BD0900485EDD /* SendPingDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPingDescriptionViewController.swift; sourceTree = "<group>"; };
+		37BBF2CF1FFB202E008BDE6B /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Users.swift; path = mysampleapp/amazonaws/models/mysampleapp/amazonaws/models/nosql/Users.swift; sourceTree = SOURCE_ROOT; };
+		37C3EF951FD8C65C00A9FB38 /* TestLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = TestLocation.gpx; path = MySampleApp/mysampleapp/app/TestLocation.gpx; sourceTree = SOURCE_ROOT; };
+		37E13F8C20ABDE810081F971 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		37E2BF601F9D2C7D007C7171 /* ActiveUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActiveUsersViewController.swift; path = MySampleApp/mysampleapp/app/ActiveUsersViewController.swift; sourceTree = SOURCE_ROOT; };
+		3F80DDC3F7FC19CBA6B2FE92 /* Pods-TipBucket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipBucket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TipBucket/Pods-TipBucket.debug.xcconfig"; sourceTree = "<group>"; };
+		97410641BB6F774D3D68B01E /* Pods-TipBucket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipBucket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TipBucket/Pods-TipBucket.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F426D880000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37ABF28420A3524300FE7B9A /* AWSPinpoint.framework in Frameworks */,
+				37ABF28220A3523E00FE7B9A /* SideMenu.framework in Frameworks */,
+				37ABF28020A3523300FE7B9A /* DLRadioButton.framework in Frameworks */,
+				37ABF27E20A351F600FE7B9A /* AWSMobileClient.framework in Frameworks */,
+				37ABF27C20A351EC00FE7B9A /* Pods_TipBucket.framework in Frameworks */,
+				37ABF27A20A351E100FE7B9A /* AWSUserPoolsSignIn.framework in Frameworks */,
+				37ABF27820A351DD00FE7B9A /* AWSDynamoDB.framework in Frameworks */,
+				37ABF27620A351D900FE7B9A /* AWSCore.framework in Frameworks */,
+				37ABF27420A351D500FE7B9A /* AWSCognitoIdentityProviderASF.framework in Frameworks */,
+				37ABF27220A351D100FE7B9A /* AWSAuthUI.framework in Frameworks */,
+				37E13F8D20ABDE810081F971 /* MapKit.framework in Frameworks */,
+				37ABF27020A351CB00FE7B9A /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				37ABF26E20A351C000FE7B9A /* AWSAuthCore.framework in Frameworks */,
+				E7A30F04C367314D00000000 /* UIKit.framework in Frameworks */,
+				E7A30F04F38AA36D00000000 /* SystemConfiguration.framework in Frameworks */,
+				E7A30F045C92D6AA00000000 /* Security.framework in Frameworks */,
+				E7A30F04EA9F866500000000 /* CFNetwork.framework in Frameworks */,
+				E7A30F04F6B7192100000000 /* libz.tbd in Frameworks */,
+				E7A30F04871DE67000000000 /* libsqlite3.tbd in Frameworks */,
+				E7A30F0479F0ABB700000000 /* Foundation.framework in Frameworks */,
+				E7A30F046BFEEA1600000000 /* AVFoundation.framework in Frameworks */,
+				E7A30F04A745BFB800000000 /* AVKit.framework in Frameworks */,
+				E7A30F04AB9F1D4300000000 /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B401C9790A50516A00000000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979953F8ACF00000000 /* NoSQL */,
+			);
+			name = Models;
+			path = mysampleapp/amazonaws/models;
+			sourceTree = "<group>";
+		};
+		B401C9793B02785600000000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2947060F5700000000 /* AppDelegate.swift */,
+				1DD70E2988C5AD3500000000 /* Images.xcassets */,
+				1DD70E290C6636A500000000 /* Launch Screen.storyboard */,
+				1DD70E29639097D100000000 /* Main.storyboard */,
+				370F5EE11FC531D300750A54 /* LocationServicesViewController.swift */,
+				37E2BF601F9D2C7D007C7171 /* ActiveUsersViewController.swift */,
+				37BB047C1FA6640100485EDD /* SendPingViewController.swift */,
+				37BB047E1FA6BD0900485EDD /* SendPingDescriptionViewController.swift */,
+				370F5EE31FCE60AA00750A54 /* UserDescriptionViewController.swift */,
+				370F5EE71FCE627900750A54 /* UserAnnotation.swift */,
+				37452C501FE224D700262F74 /* MenuViewController.swift */,
+				37A2BD232047A05100BA4F1B /* ActivityTableViewController.swift */,
+				37A2BD252047A55A00BA4F1B /* TransactionTableViewCell.swift */,
+				B401C9795CC6CB5A00000000 /* SupportingFiles */,
+				B401C979654E724A00000000 /* Utility */,
+			);
+			name = App;
+			path = mysampleapp/app;
+			sourceTree = "<group>";
+		};
+		B401C9793BE9AC4500000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E13F8C20ABDE810081F971 /* MapKit.framework */,
+				37ABF28520A3524300FE7B9A /* AWSPinpoint.framework */,
+				37ABF28320A3523E00FE7B9A /* SideMenu.framework */,
+				37ABF28120A3523300FE7B9A /* DLRadioButton.framework */,
+				37ABF27F20A351F600FE7B9A /* AWSMobileClient.framework */,
+				37ABF27D20A351EC00FE7B9A /* Pods_TipBucket.framework */,
+				37ABF27B20A351E100FE7B9A /* AWSUserPoolsSignIn.framework */,
+				37ABF27920A351DD00FE7B9A /* AWSDynamoDB.framework */,
+				37ABF27720A351D900FE7B9A /* AWSCore.framework */,
+				37ABF27520A351D500FE7B9A /* AWSCognitoIdentityProviderASF.framework */,
+				37ABF27320A351D100FE7B9A /* AWSAuthUI.framework */,
+				37ABF27120A351CB00FE7B9A /* AWSCognitoIdentityProvider.framework */,
+				37ABF26F20A351C000FE7B9A /* AWSAuthCore.framework */,
+				1DD70E2962D612D700000000 /* AVFoundation.framework */,
+				1DD70E2975C68E5900000000 /* AVKit.framework */,
+				1DD70E29366F84A500000000 /* CFNetwork.framework */,
+				1DD70E29FC8434B100000000 /* Foundation.framework */,
+				1DD70E29FB043D8B00000000 /* SafariServices.framework */,
+				1DD70E29F230802700000000 /* Security.framework */,
+				1DD70E29DDC78DAD00000000 /* SystemConfiguration.framework */,
+				1DD70E2946DECD2700000000 /* UIKit.framework */,
+				1DD70E29FDC5C29600000000 /* libsqlite3.tbd */,
+				1DD70E29B80691A000000000 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B401C9793C027ED800000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2976EDA96B00000000 /* TipBucket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401C9794ABC4E5200000000 = {
+			isa = PBXGroup;
+			children = (
+				B401C9793BE9AC4500000000 /* Frameworks */,
+				B401C9794C4D9EF600000000 /* MySampleApp */,
+				B401C9793C027ED800000000 /* Products */,
+				CA2321DF009DB7CB6F8F1595 /* Pods */,
+			);
+			name = mainGroup;
+			sourceTree = "<group>";
+		};
+		B401C9794C4D9EF600000000 /* MySampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				B401C97960C3572600000000 /* AmazonAws */,
+				B401C9793B02785600000000 /* App */,
+				B401C979B9ABC3CA00000000 /* Demo */,
+				1DD70E2903593A7900000000 /* MySampleApp.entitlements */,
+			);
+			name = MySampleApp;
+			path = mysampleapp;
+			sourceTree = "<group>";
+		};
+		B401C9795CC6CB5A00000000 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				379D001C2050D21500367602 /* awsconfiguration.json */,
+				1DD70E29CBEEDD1400000000 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			path = mysampleapp/app/supportingfiles;
+			sourceTree = "<group>";
+		};
+		B401C97960C3572600000000 /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				B401C9790A50516A00000000 /* Models */,
+			);
+			name = AmazonAws;
+			path = mysampleapp/amazonaws;
+			sourceTree = "<group>";
+		};
+		B401C979654E724A00000000 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2904410CE000000000 /* UtilityFunctions.swift */,
+				37C3EF951FD8C65C00A9FB38 /* TestLocation.gpx */,
+			);
+			name = Utility;
+			path = mysampleapp/app/utility;
+			sourceTree = "<group>";
+		};
+		B401C97967C17F0200000000 /* Engage */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29F33DA97D00000000 /* Engage.storyboard */,
+				1DD70E2910B9B37300000000 /* EngageAnalyticsViewController.swift */,
+				1DD70E2987865B6700000000 /* EngageDescriptionViewController.swift */,
+				1DD70E29C0D4ECB100000000 /* UserEngageViewController.swift */,
+			);
+			name = Engage;
+			path = mysampleapp/demo/engage;
+			sourceTree = "<group>";
+		};
+		B401C979953F8ACF00000000 /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				37BBF2CF1FFB202E008BDE6B /* Users.swift */,
+				37A2BD1B20296BE200BA4F1B /* Transactions.swift */,
+			);
+			name = NoSQL;
+			path = mysampleapp/amazonaws/models/nosql;
+			sourceTree = "<group>";
+		};
+		B401C979B9ABC3CA00000000 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E297BAD932F00000000 /* DemoFeature.swift */,
+				B401C97967C17F0200000000 /* Engage */,
+				B401C979F31DCC7A00000000 /* NoSQL */,
+				B401C979DA29243200000000 /* UserIdentity */,
+			);
+			name = Demo;
+			path = mysampleapp/demo;
+			sourceTree = "<group>";
+		};
+		B401C979DA29243200000000 /* UserIdentity */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E291A60023500000000 /* UserIdentity.storyboard */,
+				1DD70E29E21A8D5F00000000 /* UserIdentityViewController.swift */,
+			);
+			name = UserIdentity;
+			path = mysampleapp/demo/useridentity;
+			sourceTree = "<group>";
+		};
+		B401C979F31DCC7A00000000 /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2956B6530B00000000 /* NoSQLDatabase.storyboard */,
+				1DD70E29A522470900000000 /* NoSQLModelHelpers.swift */,
+				1DD70E2955AE162D00000000 /* NoSQLQueryResultViewController.swift */,
+				1DD70E293491208B00000000 /* NoSQLSampleDataGenerator.swift */,
+				1DD70E29D1D84E8900000000 /* NoSQLTableFactory.swift */,
+				1DD70E29401B66CF00000000 /* NoSQLTableListViewController.swift */,
+				1DD70E299CADA3EB00000000 /* NoSQLTableViewController.swift */,
+				1DD70E2970E374C500000000 /* PingsTable.swift */,
+				1DD70E290C8EAAF700000000 /* UserAccountTable.swift */,
+			);
+			name = NoSQL;
+			path = mysampleapp/demo/nosql;
+			sourceTree = "<group>";
+		};
+		CA2321DF009DB7CB6F8F1595 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				291C173FEBE9C34998F4C39D /* Pods-MySampleApp.debug.xcconfig */,
+				1E29183B32710AC45986C52C /* Pods-MySampleApp.release.xcconfig */,
+				3F80DDC3F7FC19CBA6B2FE92 /* Pods-TipBucket.debug.xcconfig */,
+				97410641BB6F774D3D68B01E /* Pods-TipBucket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66DC04E0000000000000000 /* TipBucket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXNativeTarget "TipBucket" */;
+			buildPhases = (
+				871D5CA54D0942D486550B65 /* [CP] Check Pods Manifest.lock */,
+				E1F174220000000000000001 /* ShellScript */,
+				1870857F0000000000000000 /* Sources */,
+				4F426D880000000000000000 /* Frameworks */,
+				8A032D2C0000000000000000 /* Resources */,
+				E6571FA0D9D87ABDDB7F14E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipBucket;
+			productName = MySampleApp;
+			productReference = 1DD70E2976EDA96B00000000 /* TipBucket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C847930000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					E66DC04E0000000000000000 = {
+						DevelopmentTeam = M6589NCAGW;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 218C37090000000000000000 /* Build configuration list for PBXProject "TipBucket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B401C9794ABC4E5200000000;
+			productRefGroup = B401C9793C027ED800000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66DC04E0000000000000000 /* TipBucket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A032D2C0000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379D001D2050D21500367602 /* awsconfiguration.json in Resources */,
+				E7A30F040E44EE0C00000000 /* Launch Screen.storyboard in Resources */,
+				E7A30F0437F8284E00000000 /* Images.xcassets in Resources */,
+				E7A30F04EC5BB12000000000 /* UserIdentity.storyboard in Resources */,
+				E7A30F0465FDC06D00000000 /* NoSQLDatabase.storyboard in Resources */,
+				E7A30F046F09057D00000000 /* Engage.storyboard in Resources */,
+				37C3EF961FD8C65C00A9FB38 /* TestLocation.gpx in Resources */,
+				E7A30F046E843E8D00000000 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		871D5CA54D0942D486550B65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TipBucket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F174220000000000000001 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=${SRCROOT}/MySampleApp/Sdk/CheckXcodeVersion.sh\nif [ -e $FILE ]; then\n    $FILE\nfi\n\nFILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+		E6571FA0D9D87ABDDB7F14E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TipBucket/Pods-TipBucket-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TipBucket/Pods-TipBucket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870857F0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A30F04C3EAA17F00000000 /* NoSQLQueryResultViewController.swift in Sources */,
+				E7A30F043079D6B200000000 /* PingsTable.swift in Sources */,
+				37BB047D1FA6640100485EDD /* SendPingViewController.swift in Sources */,
+				E7A30F04A9F8EF7600000000 /* NoSQLTableListViewController.swift in Sources */,
+				E7A30F04C468845300000000 /* NoSQLTableFactory.swift in Sources */,
+				37A2BD242047A05100BA4F1B /* ActivityTableViewController.swift in Sources */,
+				37452C511FE224D700262F74 /* MenuViewController.swift in Sources */,
+				E7A30F0429FC032F00000000 /* AppDelegate.swift in Sources */,
+				37E2BF611F9D2C7D007C7171 /* ActiveUsersViewController.swift in Sources */,
+				E7A30F049C20E92D00000000 /* EngageAnalyticsViewController.swift in Sources */,
+				370F5EE21FC531D300750A54 /* LocationServicesViewController.swift in Sources */,
+				E7A30F04F61729C200000000 /* DemoFeature.swift in Sources */,
+				E7A30F047B56D17F00000000 /* UserAccountTable.swift in Sources */,
+				E7A30F04C6E0F4A900000000 /* EngageDescriptionViewController.swift in Sources */,
+				37A2BD1C20296BE200BA4F1B /* Transactions.swift in Sources */,
+				370F5EE41FCE60AA00750A54 /* UserDescriptionViewController.swift in Sources */,
+				E7A30F04F028F46300000000 /* NoSQLSampleDataGenerator.swift in Sources */,
+				37BB047F1FA6BD0900485EDD /* SendPingDescriptionViewController.swift in Sources */,
+				E7A30F04AA4F411600000000 /* UtilityFunctions.swift in Sources */,
+				E7A30F04420534BE00000000 /* NoSQLTableViewController.swift in Sources */,
+				E7A30F041AF2E88000000000 /* NoSQLModelHelpers.swift in Sources */,
+				37A2BD262047A55A00BA4F1B /* TransactionTableViewCell.swift in Sources */,
+				37BBF2D01FFB202E008BDE6B /* Users.swift in Sources */,
+				370F5EE81FCE627900750A54 /* UserAnnotation.swift in Sources */,
+				E7A30F04FFA9495200000000 /* UserEngageViewController.swift in Sources */,
+				E7A30F04E3BC817000000000 /* UserIdentityViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49524373386D956C00000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49524373386D956C00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97410641BB6F774D3D68B01E /* Pods-TipBucket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySampleApp/MySampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M6589NCAGW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/**",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Aws",
+					"$(PROJECT_DIR)/MySampleApp/AmazonAws",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MySampleApp/App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = M6589NCAGW.TipBucketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4952437346F3E10800000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4952437346F3E10800000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F80DDC3F7FC19CBA6B2FE92 /* Pods-TipBucket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySampleApp/MySampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M6589NCAGW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/**",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Aws",
+					"$(PROJECT_DIR)/MySampleApp/AmazonAws",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MySampleApp/App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = M6589NCAGW.TipBucketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218C37090000000000000000 /* Build configuration list for PBXProject "TipBucket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437346F3E10800000000 /* Debug */,
+				49524373386D956C00000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		218C37090000000000000001 /* Build configuration list for PBXNativeTarget "TipBucket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437346F3E10800000001 /* Debug */,
+				49524373386D956C00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C847930000000000000000 /* Project object */;
+}

@@ -590,10 +590,10 @@
             </objects>
             <point key="canvasLocation" x="3326.25" y="-339.08450704225351"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="Xgv-wE-tdB">
             <objects>
-                <viewController id="LWx-gf-r2f" sceneMemberID="viewController">
+                <viewController id="LWx-gf-r2f" customClass="ConfirmationViewController" customModule="TipBucket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zbm-UJ-Q68"/>
                         <viewControllerLayoutGuide type="bottom" id="ZpE-zM-S3V"/>

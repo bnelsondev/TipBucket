@@ -53,21 +53,14 @@ class UserDescriptionViewController: UIViewController, UITextFieldDelegate {
         if (customDollarTextField.text?.isInt)! {
             amountSelected = Int(customDollarTextField.text!)!
         }
-        if (amountSelected != nil) {
-            addToUser(funds: amountSelected)
-            let alertController = UIAlertController(title: "Success", message: "You have sent funds to \(selectedUser._userName!).", preferredStyle: UIAlertControllerStyle.alert)
-            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
-                (_)in
-                self.performSegue(withIdentifier: "unwindToActiveUsers", sender: self)
-            })
-            alertController.addAction(OKAction)
-            
-            self.present(alertController, animated: true, completion: nil)
-        } else {
+        if (amountSelected == nil) {
             let alertController = UIAlertController(title: "Input Error", message: "Please input a number.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-    
-                self.present(alertController, animated: true, completion: nil)
+
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+            addToUser(funds: amountSelected)
+            self.performSegue(withIdentifier: "confirmation", sender: self)
         }
     }
     
@@ -185,15 +178,15 @@ class UserDescriptionViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
+    // MARK: - Navigation 
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ConfirmationViewController
+        vc.message = "You have sent $\(amountSelected!) to \(selectedUser._userName!)."
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
 

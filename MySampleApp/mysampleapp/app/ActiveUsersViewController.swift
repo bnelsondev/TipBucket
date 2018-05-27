@@ -24,7 +24,7 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
     var activeUsersAnnotations:[UserPointAnnotation] = []
     var currentUser: Users?
     var selectedUser: Users?
-    var transactions: [Transactions] = []
+//    var transactions: [Transactions] = []
     var userExist: Bool?
     var userLoggedIn: Bool?
     var timer = Timer()
@@ -35,8 +35,6 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
     @IBOutlet weak var onlineLabel: UILabel!
     
     @IBAction func menuButtonAction(_ sender: Any) {
-//        loadTransactions()
-//        appDelegate.transactions = transactions
     }
     
     @IBAction func goOfflineButtonAction(_ sender: Any) {
@@ -78,11 +76,10 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         navigationController?.setNavigationBarHidden(true, animated: false)
         setup()
-        scanTable()
         checkUser()
+        scanTable()
         loadTransactions()
     }
     
@@ -114,13 +111,10 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
     func refresh() {
         self.UI {
             self.scanTable()
-//            self.loadTransactions()
-            self.appDelegate.transactions = self.transactions
+            self.loadTransactions()
         }
-        print("activeUsersMap Refreshed")
-//        loadTransactions()
-//        appDelegate.transactions = transactions
-        print("Transactions Loaded")
+        print("Map Refreshed")
+        print("Transactions Refreshed")
     }
     
     func goToLogin() {
@@ -399,7 +393,6 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
                         }
                     }
                 }
-                
                 self.UI {
                     if !(self.activeUsersAnnotations == loadedAnnotations) {
                         self.activeUsersMap.removeAnnotations(self.activeUsersAnnotations)
@@ -416,20 +409,18 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
     
     func loadTransactions() {
         
-        if !self.transactions.isEmpty {
-            self.transactions.removeAll()
-        }
-        
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         let userId = AWSIdentityManager.default().identityId
+        let scanExpression = AWSDynamoDBScanExpression()
+        
+        var loadedTransactions: [Transactions] = []
+        
         if userId == nil{
             print("No User Logged In! Can't Load Transactions.")
             userLoggedIn = false
             return
         }
-//        var loadedTransactions: [Transactions]?
         
-        let scanExpression = AWSDynamoDBScanExpression()
         scanExpression.filterExpression = "contains(#userId, :userId)"
         scanExpression.expressionAttributeNames  = [
             "#userId": "userId"
@@ -444,16 +435,16 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
                 print("The request failed. Error: \(error)")
             } else if let paginatedOutput = task.result {
                 for transaction in paginatedOutput.items as! [Transactions] {
-                    self.transactions.append(transaction)
+                    loadedTransactions.append(transaction)
+                }
+                self.UI {
+                    if !(self.appDelegate.transactions == loadedTransactions) {
+                        self.appDelegate.transactions = loadedTransactions
+                        print("Transactions Updated")
+                    }
                 }
             }
             return nil})
-        
-        self.UI {
-//            self.transactions = loadedTransactions
-//            self.appDelegate.transactions = self.transactions
-//          print("Transactions Loaded")
-        }
     }
 
 

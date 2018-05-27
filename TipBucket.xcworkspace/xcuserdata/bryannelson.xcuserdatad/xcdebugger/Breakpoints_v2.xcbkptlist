@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MySampleApp/mysampleapp/app/ActiveUsersViewController.swift"
-            timestampString = "548888956.9020979"
+            timestampString = "549136509.599573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "scanTable()"
             landmarkType = "7">
             <Locations>
@@ -47,54 +47,6 @@
                   startingLineNumber = "390"
                   endingLineNumber = "390"
                   offsetFromSymbolStart = "57">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MySampleApp/mysampleapp/app/ActiveUsersViewController.swift"
-            timestampString = "548888956.902535"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "403"
-            endingLineNumber = "403"
-            landmarkName = "scanTable()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AWSTask&lt;__ObjC.AWSDynamoDBPaginatedOutput&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt; in TipBucket.ActiveUsersViewController.scanTable() -&gt; ()"
-                  moduleName = "TipBucket"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bryannelson/OneDrive/Dev/Clients/Tip%20App/TipBucket-aws-my-sample-app-ios-swift/TipBucket/MySampleApp/mysampleapp/app/ActiveUsersViewController.swift"
-                  timestampString = "548887306.394719"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "426"
-                  endingLineNumber = "426"
-                  offsetFromSymbolStart = "9288">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AWSTask&lt;__ObjC.AWSDynamoDBPaginatedOutput&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt; in TipBucket.ActiveUsersViewController.scanTable() -&gt; ()"
-                  moduleName = "TipBucket"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bryannelson/OneDrive/Dev/Clients/Tip%20App/TipBucket-aws-my-sample-app-ios-swift/TipBucket/MySampleApp/mysampleapp/app/ActiveUsersViewController.swift"
-                  timestampString = "548887306.397331"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "389"
-                  endingLineNumber = "389"
-                  offsetFromSymbolStart = "25">
                </Location>
             </Locations>
          </BreakpointContent>

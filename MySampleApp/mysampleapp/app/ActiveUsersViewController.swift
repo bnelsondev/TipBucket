@@ -24,7 +24,6 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
     var activeUsersAnnotations:[UserPointAnnotation] = []
     var currentUser: Users?
     var selectedUser: Users?
-//    var transactions: [Transactions] = []
     var userExist: Bool?
     var userLoggedIn: Bool?
     var timer = Timer()

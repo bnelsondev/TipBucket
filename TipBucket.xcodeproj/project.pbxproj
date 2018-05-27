@@ -12,6 +12,7 @@
 		370F5EE81FCE627900750A54 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F5EE71FCE627900750A54 /* UserAnnotation.swift */; };
 		37452C511FE224D700262F74 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37452C501FE224D700262F74 /* MenuViewController.swift */; };
 		379D001D2050D21500367602 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 379D001C2050D21500367602 /* awsconfiguration.json */; };
+		379E2AEC20BB50B5008DD655 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E2AEB20BB50B5008DD655 /* ConfirmationViewController.swift */; };
 		37A2BD1C20296BE200BA4F1B /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2BD1B20296BE200BA4F1B /* Transactions.swift */; };
 		37A2BD242047A05100BA4F1B /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2BD232047A05100BA4F1B /* ActivityTableViewController.swift */; };
 		37A2BD262047A55A00BA4F1B /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2BD252047A55A00BA4F1B /* TransactionTableViewCell.swift */; };
@@ -108,6 +109,7 @@
 		370F5EE71FCE627900750A54 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
 		37452C501FE224D700262F74 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		379D001C2050D21500367602 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		379E2AEB20BB50B5008DD655 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfirmationViewController.swift; path = MySampleApp/mysampleapp/app/ConfirmationViewController.swift; sourceTree = SOURCE_ROOT; };
 		37A2BD1B20296BE200BA4F1B /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transactions.swift; path = mysampleapp/amazonaws/models/mysampleapp/amazonaws/models/nosql/Transactions.swift; sourceTree = SOURCE_ROOT; };
 		37A2BD232047A05100BA4F1B /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		37A2BD252047A55A00BA4F1B /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				37452C501FE224D700262F74 /* MenuViewController.swift */,
 				37A2BD232047A05100BA4F1B /* ActivityTableViewController.swift */,
 				37A2BD252047A55A00BA4F1B /* TransactionTableViewCell.swift */,
+				379E2AEB20BB50B5008DD655 /* ConfirmationViewController.swift */,
 				B401C9795CC6CB5A00000000 /* SupportingFiles */,
 				B401C979654E724A00000000 /* Utility */,
 			);
@@ -237,7 +240,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B401C9794ABC4E5200000000 = {
+		B401C9794ABC4E5200000000 /* mainGroup */ = {
 			isa = PBXGroup;
 			children = (
 				B401C9793BE9AC4500000000 /* Frameworks */,
@@ -421,7 +424,7 @@
 				en,
 				Base,
 			);
-			mainGroup = B401C9794ABC4E5200000000;
+			mainGroup = B401C9794ABC4E5200000000 /* mainGroup */;
 			productRefGroup = B401C9793C027ED800000000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -529,6 +532,7 @@
 				E7A30F04C3EAA17F00000000 /* NoSQLQueryResultViewController.swift in Sources */,
 				E7A30F043079D6B200000000 /* PingsTable.swift in Sources */,
 				37BB047D1FA6640100485EDD /* SendPingViewController.swift in Sources */,
+				379E2AEC20BB50B5008DD655 /* ConfirmationViewController.swift in Sources */,
 				E7A30F04A9F8EF7600000000 /* NoSQLTableListViewController.swift in Sources */,
 				E7A30F04C468845300000000 /* NoSQLTableFactory.swift in Sources */,
 				37A2BD242047A05100BA4F1B /* ActivityTableViewController.swift in Sources */,

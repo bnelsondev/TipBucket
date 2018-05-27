@@ -582,18 +582,17 @@
                         <outlet property="subView" destination="Lkb-UH-rqx" id="Cw4-Xl-Izi"/>
                         <outlet property="userImageView" destination="5gk-CV-ZQ9" id="GQf-OG-3d4"/>
                         <outlet property="userNameLabel" destination="mlH-2S-FSg" id="W0O-J9-S8V"/>
-                        <segue destination="CkE-c6-THK" kind="unwind" identifier="unwindToActiveUsers" unwindAction="unwindToActiveUsersWithSegue:" id="Sox-fF-N4B"/>
+                        <segue destination="LWx-gf-r2f" kind="show" identifier="confirmation" id="GFU-Uu-gsm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O21-Mb-HEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="CkE-c6-THK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3326.25" y="-339.08450704225351"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="Xgv-wE-tdB">
             <objects>
-                <viewController id="LWx-gf-r2f" sceneMemberID="viewController">
+                <viewController id="LWx-gf-r2f" customClass="ConfirmationViewController" customModule="TipBucket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zbm-UJ-Q68"/>
                         <viewControllerLayoutGuide type="bottom" id="ZpE-zM-S3V"/>
@@ -602,24 +601,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Confirmation Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-of-HyN">
-                                <rect key="frame" x="35" y="230" width="250" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-of-HyN">
+                                <rect key="frame" x="35" y="272" width="250" height="24"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="yPY-2r-6pl"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Q-ze-Y21">
-                                <rect key="frame" x="70" y="459" width="180" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Q-ze-Y21">
+                                <rect key="frame" x="70" y="512" width="180" height="36"/>
                                 <color key="backgroundColor" red="0.92056792970000001" green="0.25396734479999999" blue="0.14499029520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="14T-BR-ogD"/>
-                                    <constraint firstAttribute="height" constant="31" id="9pe-Ct-caH"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="wSZ-RN-WtF"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="120" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="OK">
@@ -631,14 +622,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="okButton:" destination="LWx-gf-r2f" eventType="touchUpInside" id="Uv1-l5-15U"/>
                                     <action selector="sendFundsButton:" destination="Isj-yR-cKD" eventType="touchUpInside" id="a0i-Pf-w90"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mx6-of-HyN" firstAttribute="leading" secondItem="I4x-Y5-rt9" secondAttribute="leadingMargin" constant="19" id="AgT-6o-ebF"/>
+                            <constraint firstItem="Mx6-of-HyN" firstAttribute="centerX" secondItem="Q3Q-ze-Y21" secondAttribute="centerX" id="K78-tX-eic"/>
+                            <constraint firstItem="Mx6-of-HyN" firstAttribute="centerY" secondItem="I4x-Y5-rt9" secondAttribute="centerY" id="M8v-r7-Ug1"/>
+                            <constraint firstAttribute="bottom" secondItem="Q3Q-ze-Y21" secondAttribute="bottom" constant="20" symbolic="YES" id="gf5-rf-hfR"/>
+                            <constraint firstItem="Q3Q-ze-Y21" firstAttribute="leading" secondItem="I4x-Y5-rt9" secondAttribute="leadingMargin" constant="54" id="uMU-3w-Lja"/>
+                            <constraint firstItem="Mx6-of-HyN" firstAttribute="centerX" secondItem="I4x-Y5-rt9" secondAttribute="centerX" id="yWO-z1-3EQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Mx6-of-HyN" id="1Tk-V2-bho"/>
+                        <segue destination="6UL-Wc-ZNz" kind="unwind" identifier="unwindToActiveUsers" unwindAction="unwindToActiveUsersWithSegue:" id="Ktd-oK-FQ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi5-8X-EgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6UL-Wc-ZNz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4220.625" y="-339.08450704225351"/>
         </scene>

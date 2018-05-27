@@ -8,7 +8,20 @@
 import UIKit
 
 class ConfirmationViewController: UIViewController {
-
+    
+    var message: String?
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    @IBAction func okButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "unwindToActiveUsers", sender: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        messageLabel.sizeToFit()
+        messageLabel.text = message
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

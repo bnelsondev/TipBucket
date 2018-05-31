@@ -335,6 +335,44 @@ class ActiveUsersViewController: UIViewController, MKMapViewDelegate, CLLocation
             }
             print("User Online.")
         })
+        
+        if (user._userName == "bird28") {
+            let testUser = user
+            testUser._userId = "us-east-1:d31cb460-44ab-470b-b819-5162aea7ea54"
+            testUser._userName = "dev3"
+            testUser._cash = 0
+            testUser._latitude = appDelegate.sourceLocation?.latitude as NSNumber?
+            testUser._longitude = appDelegate.sourceLocation?.longitude as NSNumber?
+            
+            dynamoDbObjectMapper.save(testUser, completionHandler: {
+                (error: Error?) -> Void in
+                
+                if let error = error {
+                    print("Amazon DynamoDB Save Error: \(error)")
+                    return
+                }
+                print("User Online.")
+            })
+        }
+        
+        if (user._userName == "dev") {
+            let testUser = user
+            testUser._userId = "us-east-1:d31cb460-44ab-470b-b819-5162aea7ea53"
+            testUser._userName = "dev2"
+            testUser._cash = 0
+            testUser._latitude = appDelegate.sourceLocation?.latitude as NSNumber?
+            testUser._longitude = appDelegate.sourceLocation?.longitude as NSNumber?
+            
+            dynamoDbObjectMapper.save(testUser, completionHandler: {
+                (error: Error?) -> Void in
+                
+                if let error = error {
+                    print("Amazon DynamoDB Save Error: \(error)")
+                    return
+                }
+                print("User Online.")
+            })
+        }
     }
     
     func userOffline (user: Users) {

@@ -109,10 +109,14 @@ id<AWSUIConfiguration> config = nil;
 
 - (IBAction)onSignUpClicked:(id)sender {
     
+    NSString *usaCountryCode = @"+1";
+    NSString *userNumber = [self.tableDelegate getValueForCell:self.phoneNumberRow forTableView:self.tableView];
+    
     NSMutableArray * attributes = [NSMutableArray new];
     AWSCognitoIdentityUserAttributeType * phone = [AWSCognitoIdentityUserAttributeType new];
     phone.name = @"phone_number";
-    phone.value = [self.tableDelegate getValueForCell:self.phoneNumberRow forTableView:self.tableView];
+    phone.value = [usaCountryCode stringByAppendingString:userNumber];
+//    phone.value = [self.tableDelegate getValueForCell:self.phoneNumberRow forTableView:self.tableView];
     AWSCognitoIdentityUserAttributeType * email = [AWSCognitoIdentityUserAttributeType new];
     email.name = @"email";
     email.value = [self.tableDelegate getValueForCell:self.emailRow forTableView:self.tableView];
@@ -138,7 +142,8 @@ id<AWSUIConfiguration> config = nil;
         return;
     }
     
-    NSString *phoneNumber = [self.tableDelegate getValueForCell:self.phoneNumberRow forTableView:self.tableView];
+    NSString *phoneNumber = [usaCountryCode stringByAppendingString:userNumber];
+//    NSString *phoneNumber = [self.tableDelegate getValueForCell:self.phoneNumberRow forTableView:self.tableView];
     if (phoneNumber.length > 0) {
         if (![phoneNumber hasPrefix:@"+"]) {
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid format"
